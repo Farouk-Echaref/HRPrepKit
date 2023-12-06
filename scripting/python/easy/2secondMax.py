@@ -20,6 +20,7 @@ if __name__ == '__main__':
     # newList = list(newSet)
     # print(newList[len(newList) - 2])
 
+
     # set and max
     newSet = set(arr)
     newSet.remove(max(newSet))
