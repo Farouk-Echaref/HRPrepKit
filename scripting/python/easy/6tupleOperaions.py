@@ -5,6 +5,8 @@ if __name__ == "__main__":
     tmp: list = []
     n = int(input())
 
+    # map() function returns a map object(which is an iterator) of the results after applying 
+    # touthe given function to each item of a given iterable (list, tuple etc.) 
     # read and store in a dict
     # M = map(int,input().split())
 
