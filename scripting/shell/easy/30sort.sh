@@ -5,4 +5,4 @@ while read line;do
 done
 
 #  order the lines in lexicographical order.
-cat in.txt | sort -n -r
+cat in.txt | sort -n
