@@ -26,4 +26,13 @@
  - From there we pipe the resulting string using echo to the READ-END of awk:
     - awk will change every line with the tolower() function
 
+# Dockerfile:
+
+- to get an image with a tag:
+    * node:latest
+- to build:
+    * RUN npm run build
+- to execute:
+    CMD []
+
 
