@@ -1,0 +1,13 @@
+# syntax of chosing the base img
+FROM node:latest AS build
+WORKDIR /app
+COPY package*.json ./
+RUN npm install
+COPY . .
+# typo in build
+RUN npm run build  
+# syntax of chosing the base img
+FROM nginx:latest
+COPY --from=build /app/dist /usr/share/nginx/html
+#CMD is the right command for executing the nginx daemon off option
+CMD ["nginx", "-g", "daemon off"] 
