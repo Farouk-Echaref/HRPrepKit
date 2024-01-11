@@ -25,9 +25,24 @@ class Fech:
         self.login = login
     def __str__(self) -> str:
         return f"Name is {self.name} & login is {self.login}"
-
-
+    
+class Dog:
+    animal = "Dog"
+    def __init__(self, breed) -> None:
+        self.breed = breed
+    
+    #setters and getters
+    def setColor(self, color: str) -> None:
+        self.color = color
+    
+    def getColor(self) -> str:
+        return (self.color)
+    
 if __name__ == "__main__":
+    myDog = Dog("Husky")
+    myDog.setColor("Grey")
+    print(myDog.getColor())
+
     obj = Testing("fech", 24, "intern")
     sc = Second(42)
     fch = Fech("fech-cha")
