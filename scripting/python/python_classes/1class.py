@@ -23,6 +23,8 @@ class Fech:
     #instance attribute
     def __init__(self, login : str) -> None:
         self.login = login
+    def __str__(self) -> str:
+        return f"Name is {self.name} & login is {self.login}"
 
 
 if __name__ == "__main__":
@@ -38,3 +40,6 @@ if __name__ == "__main__":
 
     #accessing instance attributes
     print(fch.login)
+
+    #invoking __str__
+    print(fch)
